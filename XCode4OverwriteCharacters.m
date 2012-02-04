@@ -21,17 +21,18 @@ static void insertText( id self_, SEL _cmd, id aString )
            [inputChar isEqualToString:@"\""] ||
            [inputChar isEqualToString:@";"])
         {
-            // if the same char exists to the right of the cursor, delete it
             NSRange nextCharRange = NSMakeRange(selectedRange.location, 1);
-            NSString *nextChar = [text substringWithRange:nextCharRange];
-            if([inputChar isEqualToString:nextChar])
+            if(nextCharRange.location < text.length) // check bounds
             {
-                [self setSelectedRange:nextCharRange];
-                [self delete:nil];
+                NSString *nextChar = [text substringWithRange:nextCharRange];
+                if([inputChar isEqualToString:nextChar])
+                {
+                    [self setSelectedRange:nextCharRange];
+                    [self delete:nil];
+                }
             }
         }
     }
-    
 
    return ((void (*)(id, SEL, id))original_insertText)(self_, _cmd, (id)aString);
 }

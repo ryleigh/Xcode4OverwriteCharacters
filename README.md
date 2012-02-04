@@ -1,6 +1,6 @@
 ### Description
 
-This Xcode 4 plugin will cause certain characters (parentheses, double-quotes, semicolons) to be overwritten when the character immediately after your cursor is the same as the character you entered.
+This Xcode 4 plugin will cause certain characters (right parentheses, double-quotes, semicolons) to be overwritten when the character immediately after your cursor is the same as the character you entered.
 
 ### Installation
 
