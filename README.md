@@ -4,7 +4,8 @@ This Xcode 4 plugin will cause certain characters (right parentheses, double-quo
 
 ### Installation
 
-Download and compile the project (the plugin will be installed during the build process) or download the binary and unzip it to `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/`.
+Download and compile the project (the plugin will be installed during the build process) or download the binary and unzip it to `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/`
+
 Restart Xcode.
 
 ### Credits
